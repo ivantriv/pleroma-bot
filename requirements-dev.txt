@@ -1,0 +1,3 @@
+tox<=3.28.0
+requests-mock
+pytest

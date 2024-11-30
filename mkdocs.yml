@@ -1,0 +1,104 @@
+site_name: Stork (pleroma-bot)
+site_description: pleroma-bot
+site_author: robertoszek
+site_url: https://robertoszek.github.io/pleroma-bot/
+
+# Repository
+repo_name: robertoszek/pleroma-bot
+repo_url: https://github.com/robertoszek/pleroma-bot
+edit_uri: ""
+
+# Configuration
+theme:
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.instant
+    #- toc.integrate
+    - metadata
+  favicon: images/Stork.ico
+  logo: images/logo.png
+  name: material
+  #custom_dir: overrides
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: purple
+      accent: cyan
+      scheme: default
+      toggle:
+        icon: fontawesome/solid/moon
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: cyan
+      toggle:
+        icon: fontawesome/regular/moon
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Extras
+extra:
+  social:
+    - icon: octicons/git-merge-16
+      link: https://gitea.robertoszek.xyz/robertoszek/pleroma-bot
+    - icon: fontawesome/regular/comment-dots
+      link: https://pleroma.robertoszek.xyz/robertoszek
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/robertoszek
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/robertoszek
+
+# Google Analytics
+#google_analytics:
+#  - UA-XXXXXXXX-X
+#  - auto
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.keys
+  - pymdownx.highlight:
+      use_pygments: true
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
+  - footnotes
+  - attr_list
+plugins:
+  - search
+
+
+nav:
+  - Home: index.md
+  - Getting started:
+    - Installation: gettingstarted/installation.md
+    - Before running: gettingstarted/beforerunning.md
+    - Configuration: gettingstarted/configuration.md
+    - Usage: gettingstarted/usage.md
+    - Automate it: gettingstarted/automateit.md
+  - Contribute:
+    - Contributing: contribute/contributing.md
